@@ -1,0 +1,21 @@
+#ifndef PARAMS_H
+#define PARAMS_H
+
+#ifdef MOTE4_TEENSY41
+    #define NUM_SENSOR_BUSES 1
+#elif MOTE5_TEENSY41
+    #define NUM_SENSOR_BUSES 1
+#elif MOTE_STM32
+    #define NUM_SENSOR_BUSES 2
+#endif
+
+#define SENSOR_THREAD_RATE_MS 200
+#define NETWORK_THREAD_RATE_MS 100
+#define ACTUATOR_THREAD_RATE_MS 100
+
+#define SENSOR_QUEUE_SIZE 32
+#define MAX_NUM_SENSORS 24
+
+#define DEFAULT_STACK_SIZE 4096
+
+#endif
